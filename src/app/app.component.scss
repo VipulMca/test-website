@@ -448,6 +448,7 @@
 
 /////////////////// CSS FOR GALERY 
 .galler-area-section {
+  padding-bottom: 150px;
   .gallery-area {
     background-color: #000;
     padding-top: 100px;
@@ -517,5 +518,20 @@
         }
       }
     }
+  }
+}
+
+
+////////////////////////// for popup css
+
+.carousel-inner{
+  .carousel-item{
+    img{
+     
+      height: 800px;
+    }
+  }
+  .carousel-control-next{
+    background-color: #000;
   }
 }
