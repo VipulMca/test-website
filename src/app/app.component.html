@@ -1,0 +1,223 @@
+<div class="main-banner">
+  <section class="main-banner-image">
+    <div class="corner-arrow-area">
+      <div class="corner corner-top-left"></div>
+      <div class="corner corner-top-right"></div>
+      <div class="corner corner-bottom-right"></div>
+      <div class="corner corner-bottom-left"></div>
+    </div>
+    <div class="main-banner-text-body">
+      <div class="text-area">
+        <div class="text-top-left">
+          <h5>{{ txtOne }}</h5>
+        </div>
+        <div class="text-top-right">
+          <h5>{{ txtOne }}</h5>
+        </div>
+        <div class="text-bottom-left">
+          <h5>{{ txtOne }}</h5>
+        </div>
+        <div class="text-bottom-right">
+          <h5>{{ txtOne }}</h5>
+        </div>
+      </div>
+      <div class="text-caption">
+        <h4>Lorem ipsum, dolor sit</h4>
+      </div>
+      <div class="text-detail-name">Lorem ipsum dolor sit</div>
+      <div class="text-detail-name-icon">&</div>
+      <div class="text-detail-sub-text">Lorem ipsum</div>
+      <div class="date">TODAY, april TWELFTH</div>
+      <div class="info-area">ul Lorem</div>
+    </div>
+  </section>
+</div>
+
+<div class="navigation-area">
+  <div class="container">
+    <header class="d-flex justify-content-center">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item" (click)="scroll(info_section)">
+          <a class="nav-link">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll(our_Story)">our Story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll(schedule)">schedule</a>
+        </li>
+        <li class="nav-item" (click)="scroll(galler_area)">
+          <a class="nav-link">gallery</a>
+        </li>
+        <li class="nav-item"><a class="nav-link">Register</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+      </ul>
+    </header>
+  </div>
+</div>
+
+<div class="info-section container" #info_section>
+  <div class="row">
+    <div class="col-lg-6 col-xl-6 col-md-6">
+      <p class="info-section-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+        exercitationem voluptate consequuntur amet, facere inventore quibusdam
+        distinctio ea sunt corrupti quae illo in qui modi?
+      </p>
+      <div class="info-section-button">
+        <button class="btn">Lorem</button>
+      </div>
+    </div>
+    <div class="col-lg-6 col-lg-6 col-xl-6 col-md-6">
+      <div class="info-scetion-card">
+        <div class="card" *ngFor="let data of venueArray">
+          <div class="card-detail">
+            <strong>{{ data.type }}</strong>
+            <h6>{{ data.Date }}</h6>
+            <p>{{ data.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="our-story-section" #our_Story>
+  <div class="container">
+    <h1>Lorem ipsum, dolor sit amet elit.</h1>
+  </div>
+  <div class="our-story-hover-area">
+   
+    <div class="horinzotal-line">
+      <div class="hr-line-one">
+        <div class="detail-one-line">
+          <strong>Lorem</strong>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <span>Lorem</span>
+        </div>
+        <div class="image-on-hover">
+          <img  src="../assets/5.jpg" alt="">
+        </div>
+      </div>
+      <div class="hr-line-two">
+        <div class="detail-line-two">
+          <strong>Lorem</strong>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <span>Lorem</span>
+        </div>
+        <div class="image-on-hover">
+          <img  src="../assets/4.jpg" alt="">
+        </div>
+      </div>
+      <div class="hr-line-three">
+        <div class="detail-line-three">
+          <strong>Lorem</strong>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <span>Lorem</span>
+        </div>
+        <div class="image-on-hover">
+          <img  src="../assets/3.jpeg" alt="">
+        </div>
+      </div>
+      <div class="hr-line-four">
+        <div class="detail-line-four">
+          <strong>Lorem</strong>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <span>Lorem</span>
+        </div>
+        <div class="image-on-hover">
+          <img  src="../assets/1.jpg" alt="">
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="schedule-area contain" #schedule>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="schedule-info">
+          <h3>Monday, june 10th</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing.</p>
+        </div>
+        <div class="schedule-info-lower">
+          <h3>Saturday, june 12th</h3>
+          <p>For all of you beautiful people!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="schedule-info-tabler-form">
+          <div class="card">
+            <div class="card-detail">
+              <strong>7:00 PM</strong>
+              <h6>TBA</h6>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-detail">
+              <strong>7:30 PM– 9:00 PM</strong>
+              <h6>TBA</h6>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-info-tabler-form-lower">
+          <div class="card">
+            <div class="card-detail">
+              <strong>4:00 PM</strong>
+              <h6>THE MAIN EVENT: We're getting married!</h6>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-detail">
+              <strong>4:30 PM</strong>
+              <h6>Cocktails & small bites.</h6>
+              <div class="italic-text">
+                <i>Non-alcoholic beverages are available.</i>
+              </div>
+             
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-detail">
+              <strong>6:00 PM</strong>
+              <h6>Dinner is served.</h6>
+              <div class="italic-text">
+                <i>Vegetarian options available.</i>
+              </div>
+           
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-detail">
+              <strong>7:00 – 10:00 PM</strong>
+              <h6>Let the dancing & partying commence!</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+<div class="galler-area-section" #galler_area>
+  <div class="gallery-area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6" *ngFor="let image of _album">
+          <div class="single-gallery-item">
+            <div class="post-image">
+              <a class="d-block">
+                <img src="{{ image.image }}" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
